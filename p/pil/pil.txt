@@ -1,0 +1,1 @@
+しゃくとり+sliding window
