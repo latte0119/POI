@@ -61,6 +61,9 @@ signed main(){
 		return 0;
 	}
 
+	A[N]=1;
+	N++;
+
 	for(int i=0;i<N;i++){
 		pre[i+1]=pre[i]+(A[i]+1);
 	}
@@ -68,10 +71,7 @@ signed main(){
 		suf[i]=suf[i+1]+(1-A[i]);
 	}
 
-	p=N-1;
-	while(A[p]==0)p--;
-	int ans=pre[p];
-
+	int ans=INF;
 	p=-1;
 	for(int i=0;i<N;i++){
 		if(A[i]==0)continue;
